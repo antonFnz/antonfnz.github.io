@@ -6,7 +6,7 @@
   font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
-  font-size: 10vw;
+  font-size: 11vw;
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -17,7 +17,7 @@
   font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
-  font-size: 10vw;
+  font-size: 11vw;
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -28,16 +28,11 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 10vw;
+  font-size: 11vw;
   color: var(--light-sky);
   -webkit-animation: text-pop-up-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: text-pop-up-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
-  &:hover {
-    color: var(--sky);
-    font-style: italic;
-  }
 }
 
 .info-text {
@@ -45,7 +40,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 24px;
+  font-size: 16px;
   display: none;
   top: 90%;
   opacity: 0.6;
@@ -53,14 +48,23 @@
   text-align: center;
 }
 
+@media (min-width: 1284px) {
+  .anton {
+    &:hover {
+      color: var(--sky);
+      font-style: italic;
+    }
+  }
+}
+
 @media (max-width: 1284px) {
   .hello,
   .its,
   .anton {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     margin-top: 10%;
-    margin-left: 10%;
-    font-size: 20vw;
+    margin-left: 5%;
+    font-size: 25vw;
   }
 
   .info-text {

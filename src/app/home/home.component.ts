@@ -31,11 +31,11 @@ export class HomeComponent implements OnInit {
   }
 
   changeText(): void {
-    this.text = 'About Me';
+    if (window.innerWidth > 1287) this.text = 'About Me';
   }
 
   restoreText(): void {
-    this.text = 'Anton';
+    if (window.innerWidth > 1287) this.text = 'Anton';
   }
 
   emitChangeView(): void {
