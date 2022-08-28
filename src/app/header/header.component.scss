@@ -1,0 +1,83 @@
+@import "../../styles.scss";
+
+.header {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: flex;
+  margin: 16px 20%;
+  height: 48px;
+  width: auto;
+  border-bottom: 1px solid var(--grey);
+  justify-content: space-between;
+  align-items: center;
+
+  .icons {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  .icon {
+    opacity: 0.6;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 50%;
+    outline: 2px solid var(--grey);
+    outline-offset: 2px;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.5s;
+
+    &:hover {
+      opacity: 1;
+      animation: shake 0.5s;
+    }
+
+    @keyframes shake {
+      10% {
+        transform: rotate(15deg);
+      }
+      20% {
+        transform: rotate(-15deg);
+      }
+      30% {
+        transform: rotate(15deg);
+      }
+      40% {
+        transform: rotate(-15deg);
+      }
+    }
+  }
+
+  .icon-linkedin:hover {
+    background-color: #0e76a8;
+    outline-color: #0e76a8;
+  }
+
+  .icon-mail:hover {
+    background-color: var(--green);
+    outline-color: var(--green);
+  }
+
+  .icon-instagram:hover {
+    background-image: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    outline-color: #a02d76;
+  }
+
+  .invert:hover {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width: 1284px) {
+  .header {
+    margin: 16px 10%;
+  }
+}

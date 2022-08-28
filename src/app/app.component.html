@@ -1,0 +1,5 @@
+<header></header>
+
+<home *ngIf="currentView == 'home'" (changeViewEvent)="changeView()"></home>
+
+<about *ngIf="currentView == 'about'" (changeViewEvent)="changeView()"></about>
