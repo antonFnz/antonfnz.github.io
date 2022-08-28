@@ -8,6 +8,8 @@
   .back {
     cursor: pointer;
     font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
     font-size: 24px;
     margin-bottom: 32px;
     -webkit-animation: color-change-2x 1.5s linear infinite alternate both;
@@ -16,6 +18,8 @@
 
   .bio {
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 24px;
     text-align: left;
     border-bottom: 1px solid var(--grey);
@@ -29,6 +33,8 @@
 
   .contact {
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 32px;
     opacity: 0.5;
     margin-bottom: 48px;
@@ -51,16 +57,20 @@
   }
 
   input {
-    width: 200px;
+    width: 20%;
     height: 32px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
   }
 
   textarea {
-    width: 600px;
+    width: 40%;
     height: 200px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
     resize: none;
   }
@@ -72,6 +82,8 @@
     opacity: 0.5;
     background-color: var(--light-grey);
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 32px;
     border: none;
 
@@ -87,12 +99,17 @@
 }
 
 @media (max-width: 1284px) {
-  .about {
-    margin: 16px 10%;
+  .bio {
+    font-size: 16px !important;
   }
 
-  input {
-    width: 120px !important;
+  form {
+    gap: 16px !important;
+  }
+
+  button {
+    font-size: 24px !important;
+    height: 24px !important;
   }
 }
 
