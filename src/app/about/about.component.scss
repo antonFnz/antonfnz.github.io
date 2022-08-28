@@ -43,6 +43,7 @@
 
   form {
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     gap: 32px;
     margin-bottom: 60px;
@@ -87,6 +88,7 @@
     font-style: normal;
     font-size: 32px;
     border: none;
+    color: var(--grey);
 
     &:hover {
       opacity: 1;
@@ -118,13 +120,20 @@
     gap: 16px !important;
   }
 
+  input {
+    width: 60% !important;
+  }
+
   textarea {
+    width: 100% !important;
     height: 150px !important;
   }
 
   button {
     font-size: 24px !important;
     height: 24px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
 }
 
