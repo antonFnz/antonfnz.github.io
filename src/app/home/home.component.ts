@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
   ];
   greeting = 'Hello.';
   counter = 0;
-  element = document.getElementById('greeting');
 
   @Output() changeViewEvent = new EventEmitter<string>();
 
